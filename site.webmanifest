@@ -1,0 +1,10 @@
+{
+  "name": "Bixbott Organization",
+  "short_name": "Bixbott",
+  "description": "Next-generation AI Agent IDE organization hub.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080604",
+  "theme_color": "#c47a3a",
+  "icons": []
+}

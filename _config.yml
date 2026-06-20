@@ -1,0 +1,11 @@
+title: Bixbott Organization
+description: Next-generation AI Agent IDE organization hub and landing page.
+url: https://bixbott.github.io
+baseurl: /ORGANIZATION
+lang: vi
+license: MIT
+repository: Bixbott/ORGANIZATION
+canonical_profile_repo: https://github.com/Bixbott/.github
+exclude:
+  - Gemfile.lock
+  - vendor

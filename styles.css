@@ -666,3 +666,99 @@ pre {
     transition-duration: 0.01ms !important;
   }
 }
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.workflow-card {
+  min-height: 220px;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1.35rem;
+  background: rgba(20, 13, 8, 0.58);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
+}
+
+.workflow-card span {
+  display: inline-flex;
+  margin-bottom: 1.6rem;
+  color: var(--copper-light);
+  font-weight: 900;
+}
+
+.workflow-card p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.blueprint-panel {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.blueprint-list {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.blueprint-list li {
+  padding: 1rem;
+  border: 1px solid rgba(255, 191, 122, 0.16);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.blueprint-list strong,
+.blueprint-list span {
+  display: block;
+}
+
+.blueprint-list strong {
+  margin-bottom: 0.35rem;
+  color: var(--copper-light);
+}
+
+.blueprint-list span {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.error-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 191, 122, 0.22), transparent 28rem),
+    var(--bg);
+}
+
+.error-shell {
+  width: min(760px, 100%);
+  padding: clamp(2rem, 6vw, 4rem);
+}
+
+@media (max-width: 940px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blueprint-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
