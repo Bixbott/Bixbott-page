@@ -48,6 +48,24 @@ This landing page is connected to the official Bixbott organization repository:
 
 Use the `.github` repository as the source of truth for Bixbott's public profile, shared documentation, and GitHub-native workflow direction.
 
+
+## Deploy to Vercel
+
+This repository is ready for Vercel static deployment. After connecting the repo in the Vercel dashboard, use the default static settings:
+
+- Framework preset: **Other**
+- Build command: leave empty
+- Output directory: `.`
+- Install command: leave empty unless you want npm scripts available
+
+For CLI deployment with a logged-in Vercel account:
+
+```bash
+npx vercel@latest deploy --prod --yes
+```
+
+The `vercel.json` file defines clean URLs and basic security/cache headers for the static assets.
+
 ## Deployment notes
 
 The site is prepared for GitHub Pages-style static hosting. `_config.yml` stores the page metadata, `.nojekyll` keeps GitHub Pages from transforming static assets unexpectedly, and the manifest/robots/sitemap files support browser install metadata and search discovery.
