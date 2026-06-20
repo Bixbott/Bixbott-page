@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bixbott là hệ sinh thái AI agent gồm Core, Agent, Council, CLI, Dashboard, Management và Docs."
+    />
+    <title>Bixbott — Intelligent Agent Organization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="orb orb-three"></span>
+      <div class="copper-grid"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Bixbott home">
+        <span class="brand-mark">B</span>
+        <span>Bixbott</span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#ecosystem">Hệ sinh thái</a>
+        <a href="#architecture">Kiến trúc</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#github">GitHub</a>
+      </nav>
+      <a class="header-cta" href="#contact">Bắt đầu</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI Agent Organization Platform</p>
+          <h1>Điều phối nhiều agent thông minh trong một hệ sinh thái chuyên nghiệp.</h1>
+          <p class="hero-lead">
+            Bixbott là Agent IDE thế hệ mới cho lập trình viên: kết hợp AI Coding Agent, Code Generation, Code Review, Deployment Assistant, GitHub Integration và hệ sinh thái Core/Agent/Council có cấu trúc.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#ecosystem">Khám phá hệ thống</a>
+            <a class="secondary-button" href="#architecture">Xem kiến trúc</a>
+            <a class="secondary-button" href="https://github.com/Bixbott/.github" target="_blank" rel="noreferrer">Mở .github</a>
+          </div>
+          <div class="hero-metrics" aria-label="Chỉ số nổi bật">
+            <div>
+              <strong>7</strong>
+              <span>Module lõi</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Agent workflow</span>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <span>Khả năng mở rộng</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="command-card glass-card">
+            <div class="card-topbar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>$ bixbott council deploy
+✓ Core synchronized
+✓ Agents connected
+✓ Dashboard online
+→ Mission orchestration ready</code></pre>
+          </div>
+          <div class="orbit-system" aria-hidden="true">
+            <span class="orbit orbit-a"></span>
+            <span class="orbit orbit-b"></span>
+            <span class="orbit orbit-c"></span>
+            <span class="node node-core">Core</span>
+            <span class="node node-agent">Agent</span>
+            <span class="node node-cli">CLI</span>
+            <span class="node node-dash">UI</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="ecosystem" class="section-shell section-block">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Bixbott Ecosystem</p>
+          <h2>Một tổ chức AI agent được chia module rõ ràng.</h2>
+          <p>
+            Mỗi phần trong Bixbott có trách nhiệm riêng, giúp dự án dễ phát triển, dễ thay thế và dễ mở rộng khi lớn hơn.
+          </p>
+        </div>
+        <div class="module-grid">
+          <article class="module-card reveal"><span>01</span><h3>Management</h3><p>Quản trị cấu hình, người dùng, quyền truy cập, trạng thái hệ thống và vận hành tổng thể.</p></article>
+          <article class="module-card reveal"><span>02</span><h3>Agent</h3><p>Thực thi tác vụ tự động, kết nối công cụ, chạy workflow và phản hồi theo ngữ cảnh.</p></article>
+          <article class="module-card reveal"><span>03</span><h3>Council</h3><p>Điều phối nhiều agent, hỗ trợ lập kế hoạch, đánh giá phương án và ra quyết định.</p></article>
+          <article class="module-card reveal"><span>04</span><h3>Core</h3><p>Chứa logic nền tảng, kiểu dữ liệu, API nội bộ và quy tắc nghiệp vụ quan trọng.</p></article>
+          <article class="module-card reveal"><span>05</span><h3>CLI</h3><p>Công cụ dòng lệnh cho developer/operator để chạy lệnh, deploy, debug và tự động hóa.</p></article>
+          <article class="module-card reveal"><span>06</span><h3>Dashboard</h3><p>Giao diện web hiện đại để theo dõi agent, xem logs, tạo nhiệm vụ và quan sát tiến độ.</p></article>
+          <article class="module-card reveal module-card-wide"><span>07</span><h3>Docs</h3><p>Tài liệu hướng dẫn cài đặt, kiến trúc, API, ví dụ sử dụng và quy chuẩn đóng góp cho cộng đồng.</p></article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section-shell section-block architecture">
+        <div class="glass-card architecture-copy reveal">
+          <p class="eyebrow">System Design</p>
+          <h2>Thiết kế theo lớp, tập trung vào khả năng mở rộng.</h2>
+          <p>
+            Dashboard và CLI là lớp tương tác. Management điều hành trạng thái. Council lập kế hoạch và phân phối nhiệm vụ.
+            Agent thực thi, còn Core giữ toàn bộ logic quan trọng để các phần còn lại dùng lại nhất quán.
+          </p>
+        </div>
+        <div class="architecture-stack reveal" data-delay="100">
+          <div><strong>Interface</strong><span>Dashboard · CLI · Docs</span></div>
+          <div><strong>Control</strong><span>Management · Council</span></div>
+          <div><strong>Execution</strong><span>Agent · Tool Runtime</span></div>
+          <div><strong>Foundation</strong><span>Core · Data · Policy</span></div>
+        </div>
+      </section>
+
+      <section id="github" class="section-shell section-block github-hub">
+        <div class="section-heading reveal">
+          <p class="eyebrow">GitHub Source</p>
+          <h2>Đã liên kết với repository tổ chức Bixbott/.github.</h2>
+          <p>
+            Trang này tham chiếu trực tiếp tới hồ sơ tổ chức và tài liệu trung tâm để nội dung landing page luôn đi cùng định hướng chính thức của Bixbott.
+          </p>
+        </div>
+        <div class="link-grid">
+          <a class="link-card reveal" href="https://github.com/Bixbott/.github" target="_blank" rel="noreferrer">
+            <span>Organization repo</span>
+            <strong>Bixbott/.github</strong>
+            <p>Repository trung tâm chứa profile, docs và cấu hình nhận diện tổ chức.</p>
+          </a>
+          <a class="link-card reveal" href="https://github.com/Bixbott/.github/tree/main/profile" target="_blank" rel="noreferrer">
+            <span>Profile README</span>
+            <strong>Next-generation AI Agent IDE</strong>
+            <p>Nguồn giới thiệu chính thức cho Bixbott, Agent IDE, coding agent và GitHub-native workflow.</p>
+          </a>
+          <a class="link-card reveal" href="https://github.com/Bixbott/.github/tree/main/docs" target="_blank" rel="noreferrer">
+            <span>Docs hub</span>
+            <strong>Commands · Workspace · Integrations</strong>
+            <p>Tài liệu command, workspace design, integrations, skills và API key delegation.</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section-shell section-block">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Hướng phát triển đề xuất.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><span>Phase 1</span><h3>Nền tảng</h3><p>Chuẩn hóa README, docs, kiến trúc module và tiêu chuẩn coding.</p></div>
+          <div class="timeline-item reveal"><span>Phase 2</span><h3>Core + CLI</h3><p>Xây dựng lõi nghiệp vụ và công cụ dòng lệnh đầu tiên để vận hành nhanh.</p></div>
+          <div class="timeline-item reveal"><span>Phase 3</span><h3>Agent + Council</h3><p>Thêm workflow agent, điều phối nhiệm vụ và cơ chế đánh giá kết quả.</p></div>
+          <div class="timeline-item reveal"><span>Phase 4</span><h3>Dashboard</h3><p>Hoàn thiện giao diện giám sát, analytics, logs và quản trị hệ thống.</p></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell final-cta reveal">
+        <div>
+          <p class="eyebrow">Build the future</p>
+          <h2>Sẵn sàng biến Bixbott thành hệ sinh thái AI agent thực chiến.</h2>
+        </div>
+        <a class="primary-button" href="mailto:hello@bixbott.dev">Liên hệ triển khai</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Bixbott. Released under the MIT License.</p>
+      <a href="#top">Lên đầu trang ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
